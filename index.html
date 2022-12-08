@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+  <!--1- Create the navbar: home, about, work, resume, contact
+
+            2- Create the “about” section, ”work” section, ”resume” section, and ”contact” section (using HTML Forms) 
+
+            3- Create the page footer.
+        -->
+  <head>
+    <title>Portfolio Nassim</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- <div  style="background-image: url('image.jpg'); height: 100vh; width: 100%; background-size: cover; background-position: center;"> -->
+    <header>
+      <a name="home"></a>
+      <nav>
+        <h2 class="logo">Portflolio</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="information">
+        <a class="fa-brands fa-facebook" href=""></a>
+        <a class="fa-brands fa-instagram" href=""></a>
+        <a class="fa-brands fa-telegram" href=""></a>
+        <a class="fa-brands fa-twitter" href=""></a>
+        <!-- <h4>Hello, my name is</h4>
+                <h1>Tebbani Nassim</h1>
+                <h3>I'm a Full stack developer & Designer.</h3> -->
+        <h3>follow</h3>
+      </div>
+    </header>
+
+    <!--for section about-->
+
+    <section class="about_section">
+      <a name="about"></a>
+      <h2>About me</h2>
+
+      <div class="about_div">
+        <img class="ma_photo" src="photo1.png" />
+        <div>
+          <h3>Graphic designer</h3>
+          <h4>Hello, my name is</h4>
+          <h1>Tebbani Nassim</h1>
+          <p>
+            I am a full stack developer & graphic designer , and I'm very
+            passionate and dedicated to my work. With 8 years experience as a
+            professional designer & 2 years as Web developer, I have acquired
+            the skills and knowledge necessary to make your project a success.
+          </p>
+          <audio controls>
+            <source src="audio.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!--for section work-->
+    <a name="work"></a>
+    <section class="work_section">
+      <div class="work_div">
+        <h2>My works</h2>
+        <div class="video_div">
+          <button><<</button>
+          <video controls>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+          <button>>></button>
+        </div>
+        <br /><br />
+        <div class="capacities_div">
+          <div class="capacities">
+            <div class="card">
+              <i class="fa fa-paint-brush" aria-hidden="true"></i>
+              <h1>Graphic design</h1>
+              <p>
+                I am a full stack developer & graphic designer , and I'm very
+              </p>
+              <button type="button">Read more !</button>
+            </div>
+          </div>
+          <div class="capacities">
+            <div class="card">
+              <i class="fa fa-camera" aria-hidden="true"></i>
+              <h1>Photography</h1>
+              <p>
+                I am a full stack developer & graphic designer , and I'm very
+                pass.
+              </p>
+              <button type="button">Read more !</button>
+            </div>
+          </div>
+          <div class="capacities">
+            <div class="card">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              <h1>web developer</h1>
+              <p>
+                I am a full stack developer & graphic designer , and I'm very
+                passionate an.
+              </p>
+              <button type="button">Read more !</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <!--for section resume-->
+    <a name="resume"></a>
+    <section>
+      <h2>Resume</h2>
+      <iframe
+        src="MyCV.pdf"
+        width="60%"
+        height="800px"
+        frameborder="0"
+      ></iframe>
+    </section>
+
+    <br /><br />
+    <!--for section contact-->
+    <a name="contact"></a>
+    <section class="contact_section">
+      <h2>Contact me</h2>
+      <p>
+        Please fill out the form on this section to contact with me. Or call
+        between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
+      </p>
+      <div class="contact_div">
+        <div class="info">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <h3>Address</h3>
+          <p>662 logement lpp ouled fayet batiment 25</p>
+        </div>
+        <div class="info">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <h3>Email</h3>
+          <p>nassimtibani@gmail.com</p>
+        </div>
+        <div class="info">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <h3>Phone</h3>
+          <p>+213 557 564 426</p>
+        </div>
+      </div>
+
+      <div class="div_form">
+        <form>
+          <h2>Send messages</h2>
+          <div>
+            <input type="text" name="name" placeholder="Name" id="name" />
+            <input
+              type="number"
+              name="Phone"
+              placeholder="Phone number"
+              id="name"
+            />
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="@mail" id="name" />
+            <input type="number" name="Budget" placeholder="Budget" id="name" />
+          </div>
+
+          <textarea
+            type="text"
+            name="msg"
+            placeholder="Type your message ..."
+            id="message"
+          ></textarea>
+          <button type="submit" name="sub">Send</button>
+        </form>
+      </div>
+    </section>
+    <br /><br />
+    <!--  -->
+    <footer class="">
+      <div class="footer">
+        <a href="#0">TN</a>
+        <p>© 2022 TEBBANI nassim</p>
+        <a class="fa fa-arrow-circle-up" href="#top">
+          <i aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

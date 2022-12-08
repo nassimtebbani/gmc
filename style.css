@@ -1,0 +1,316 @@
+/* Create a file `styles.css`.
+Link it to our HTML project.
+Change the display of the navbar to make it inline.
+Change the font to roboto.
+Add classes attributes to HTML / HTML documents .
+Be creative !
+Hint: You can use the Internet to search for portfolio models. */
+
+* {
+  border: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  color: var(--secondary-color);
+}
+.logo {
+}
+
+body {
+  width: 100vw;
+
+  background-color: var(--dark-color);
+  --primary-color: #182631;
+  --dark-color: #111b22;
+  --medium-color: #344b59;
+  --secondary-color: #618095;
+  --orange: #d95d41;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+section h2 {
+  background: url(./BG_text.png);
+  padding: 0.1vh 0.5vw;
+  background-size: contain;
+  color: var(--secondary-color);
+  background-repeat: no-repeat;
+}
+.description_card {
+  position: absolute;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2vh;
+  transform: rotate(-10deg);
+  right: 20%;
+  top: 90%;
+  color: var(--secondary-color);
+  background-color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* for header */
+
+header {
+  position: absolute;
+  display: flex;
+}
+nav {
+  z-index: 2;
+  display: flex;
+  width: 100vw;
+  border: 0;
+  color: antiquewhite;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: 500;
+}
+
+.information {
+  background-color: var(--medium-color);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 2vh 2vw 7vh 2vw;
+  right: 3vw;
+  top: 3vh;
+  gap: 3vh;
+  flex-direction: column;
+}
+
+.information i {
+  color: var(--secondary-color);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+}
+.information h3 {
+  position: absolute;
+  top: 90%;
+  color: var(--dark-color);
+  background-color: var(--orange);
+  padding: 0vw 3vh;
+  transform: rotate(90deg);
+}
+
+/* for section about */
+
+audio::-webkit-media-controls-enclosure {
+  background-color: var(--orange);
+}
+.ma_photo {
+  width: 30vw;
+  border-radius: 3px;
+}
+.about_section {
+  padding-top: 5%;
+
+  position: relative;
+}
+.about_section h2 {
+  color: var(--secondary-color);
+}
+.about_section h3 {
+  color: var(--orange);
+}
+.about_section h1 {
+  color: white;
+  /* width: max-content; */
+  font-size: clamp(20px, 40px, 100px);
+}
+.about_div {
+  height: 90%;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10vw;
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+::placeholder {
+  color: var(--secondary-color);
+}
+
+.work_section {
+  background-color: var(--primary-color);
+}
+
+/* for work section */
+
+.work_div {
+  padding-top: 5%;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.video_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.video_div button {
+  color: var(--orange);
+  background-color: transparent;
+  font-size: clamp(40px, 60px, 100px);
+  font-weight: bolder;
+}
+#before {
+}
+video {
+  width: 50%;
+  border-radius: 20px;
+}
+#after {
+}
+
+.capacities_div {
+  background-color: var(--dark-color);
+  display: flex;
+  width: auto;
+  padding: 5vh 3vw;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  align-items: flex-start;
+}
+.capacities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  padding: 20px 35 px;
+  background: #344b59;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card h1 {
+  color: white;
+}
+
+.card button {
+  background-color: var(--orange);
+  color: var(--dark-color);
+  border-radius: 1vh;
+  margin-top: 3vh;
+  padding: 1vh 5vh;
+}
+
+.card i {
+  font-size: x-large;
+  padding-top: 30px;
+}
+
+/* for section contact */
+
+.contact_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.contact_div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3vh 0vw;
+}
+.contact_div > p {
+  width: 50%;
+  display: inline-block;
+}
+
+.div_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 3vh 0vw;
+  background-color: var(--dark-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 3vh;
+  width: 50%;
+}
+form > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2vw;
+}
+form button {
+  background-color: var(--orange);
+  color: var(--dark-color);
+  border-radius: 1vh;
+  margin-top: 3vh;
+  padding: 1vh 5vh;
+}
+form input,
+textarea:focus {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  outline-style: none;
+}
+form input,
+textarea {
+  background-color: unset;
+  border-style: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* for footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+@media screen () {
+}
